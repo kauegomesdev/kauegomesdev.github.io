@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modelo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0" >
+            </p>
+            <p id="txts"> Sexo: 
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" id="bott" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">      
+            Clique acima para verificar a <strong>idade</strong>
+        </div>
+    </section>
+    <footer id="pe">
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+</body>
+<script src="modelo.js">  </script>
+</html>
